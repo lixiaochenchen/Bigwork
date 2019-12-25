@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+
+  <title>Like - Click Effect</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <style>
+
+    * {
+
+      margin: 0;
+
+      padding: 0;
+
+    }
+
+
+    body {
+
+      height: 100vh;
+
+    }
+
+    .like-wrap {
+
+      height: 20%;
+
+      color: #ccc;
+
+      cursor: pointer;
+
+      /* user-select: none; */
+
+    }
+
+    .like {
+
+      position: fixed;
+
+      color: #ccc;
+
+      user-select: none;
+
+    }
+
+    ul,li{
+
+	list-style: none;
+
+    }
+.head{
+	position: absolute;
+	width: 1518px;
+	height: 600px;
+	top: 100px;
+	background-color: rgb(16,20,37);
+}
+.img{
+	position: absolute;
+	left: 420px;
+}
+.big{
+    width: 1518px;
+	height: 1780px;
+	/* margin: 0 auto; */
+	background-color:rgb(16,20,37);
+	top: 700px;
+    position: absolute;
+    /* left: 1px; */
+}
+.big1{
+	width: 1350px;
+	height: 1780px;
+	background-color: rgb(16,20,37);
+	margin-left: 80px;
+}
+.big1 li{
+	width:420px;
+	height:420px;
+	border:1px solid   rgb(16,20,37);
+	float:left;
+	margin-left:20px;
+	margin-bottom:20px;
+	text-align:center;
+	position:relative;
+}
+.txt{
+	width:100%;
+	height:100%;
+	display:none;
+	position:absolute;
+	bottom:0;
+}
+.big1 li:hover .txt{
+	display:block;
+}
+.one{
+    width: 1518px;
+	height: 680px;
+	/* margin: 0 auto; */
+	background-color:rgb(16,20,37);
+	top: 2480px;
+    position: absolute;
+    /* left: 1px; */
+}
+.one1{
+	position: absolute;
+	left: 50px;
+}
+.line{
+	width: 1518px;
+    background-color: grey;
+    height: 1px;
+    top: 3160px;
+    position: absolute;
+}
+.two{
+    width: 1518px;
+	height: 580px;
+	/* margin: 0 auto; */
+	background-color:rgb(16,20,37);
+	top: 3161px;
+    position: absolute;
+    /* left: 1px; */
+}
+.two img{
+	left: 30px;
+	position: absolute;
+}
+.two1{
+	position: absolute;
+	left: 790px;
+	margin-top: 153px;
+}
+.two1 li:hover .txtt{
+	display:block;
+}
+.txtt{
+	width:100%;
+	height:100%;
+	display:none;
+	position:absolute;
+	bottom:225px;
+}
+.two2{
+	position: absolute;
+	left: 1050px;
+	margin-top: 153px;
+}
+.two2 li:hover .txtt{
+	display:block;
+}
+
+        .top{
+			width: 1500px;
+			height: 120px;
+			background-color:rgb(16,20,37);
+			position: fixed;
+			top: 0;
+			color: white;
+
+		}
+
+		#toppp{
+			
+			height: 90px;
+			
+
+		}
+		
+		.top1{
+			width: 180px;
+			height: 80px;
+			margin-top: 40px;
+			margin-left: 69px;
+			/* background-color: black; */
+			float: left;
+			font-size: 18px;
+		}
+		.top2{
+			width: 85px;
+			height: 18px;
+			margin-top: 54px;
+			margin-left:15px; 
+			float: left;
+			background-color:#2d2d2d;
+			border-radius: 50px;
+			padding-top: 4px;
+		}
+		#top21{
+			background-color: #2d2d2d;
+		}
+		#top22{
+			background-color: #13e0bc;
+			color: black;
+		}
+		.top3{
+			width: 40px;
+			height: 40px;
+			margin-right:100px;
+			margin-top: 40px;
+			background-color: black;
+			float: right;
+			position: fixed;
+			right: 130px;
+		}
+		
+		.top4{
+			width: 60px;
+			height: 25px;
+			margin-top: 45px;
+			margin-right:100px; 
+			float: right;
+			background-color: #12b605;
+			border-radius: 50px 50px 50px 10px;
+			text-align: center;
+			padding-top: 5px;
+			color: white;
+		}
+
+		#top31{
+			background-color: #13e0bc;
+		}
+		#top32{
+			background-color: #12b605;
+		}
+        #input11{
+			background-color: #eeeeee;
+			width: 180px;
+			height: 40px;
+			margin-right:100px;
+			border-radius: 50px;
+			border: none;
+			text-align: center;
+			padding-top: 8px;
+			float: right;
+		}
+
+
+ </style>
+
+</head>
+
+<body>
+
+	<div class="top" id="topp">
+			<div class="top1">
+				<h1>组织成员</h1>
+			</div>
+			<div class="top2"  id="sky">
+				<p style="text-align:center; font-size: 10px;">奇迹秀首页></p>
+			</div>
+			<div class="top4" id="sky1">
+				<p>赞助</p>
+			</div>
+			<div class="top3" id="ttop3">
+				<img src="images/5.png" id="img1"> 
+			</div>
+			
+		</div>
+	
+
+    <div class="content-wrap "></div>
+
+    <div class="like-wrap "><i class="fas fa-heart"></i></div>
+
+  
+  <div class="head">
+		<div class="img"><img src="images/1.png"></div>
+	</div>
+	<div class="big">
+ 
+		<ul class="big1">
+			<li>
+				<img src="images/01.png">
+				<div class="txt">
+					<img src="images/001.png">
+				</div>
+			</li>
+		    <li>
+				<img src="images/02.png">
+				<div class="txt">
+					<img src="images/002.png">
+				</div>
+			</li>
+			<li>
+				<img src="images/03.png">
+				<div class="txt">
+					<img src="images/003.png">
+				</div>
+			</li>
+			<li>
+				<img src="images/04.png">
+				<div class="txt">
+					<img src="images/004.png">
+				</div>
+			</li>
+			<li>
+				<img src="images/05.png">
+				<div class="txt">
+					<img src="images/005.png">
+				</div>
+			</li>
+			<li>
+				<img src="images/06.png">
+				<div class="txt">
+					<img src="images/006.png">
+				</div>
+			</li>
+			<li>
+				<img src="images/07.png">
+				<div class="txt">
+					<img src="images/007.png">
+				</div>
+			</li>
+			<li>
+				<img src="images/08.png">
+				<div class="txt">
+					<img src="images/008.png">
+				</div>
+			</li>
+			<li>
+				<img src="images/09.png">
+				<div class="txt">
+					<img src="images/009.png">
+				</div>
+			</li>
+			<li>
+				<img src="images/10.png">
+				<div class="txt">
+					<img src="images/010.png">
+				</div>
+			</li>
+			<li>
+				<img src="images/11.png">
+				<div class="txt">
+					<img src="images/011.png">
+				</div>
+			</li>
+			<li>
+				<img src="images/12.png">
+				<div class="txt">
+					<img src="images/012.png">
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="one">
+		<div class="one1">
+			<img src="images/111.png">
+		</div>
+	</div>
+    <div class="line"></div>
+	<div class="two">
+		<img src="images/222.png">
+
+		<ul class="two1">
+			<li>
+				<img src="images/0.png">
+				<div class="txtt">
+					<img src="images/00.png">
+				</div>
+			</li>
+		</ul>
+		<ul class="two2">
+			<li>
+				<img src="images/3.png">
+				<div class="txtt">
+					<img src="images/33.png">
+				</div>
+			</li>
+		</ul>
+		
+	</div>
+
+	
+ <script src="addLike.js"></script> 
+
+
+	
+</body>
+
+</html>
