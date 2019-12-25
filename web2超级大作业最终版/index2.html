@@ -1,0 +1,262 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+    <title>大作业</title>
+    <style>
+        .anniu1{
+                position: absolute;
+                top: 430px;
+                left: 400px;
+                list-style: none;
+        }
+        .anniu2{
+                position: absolute;
+                top: 435px;
+                left: 650px;
+                list-style: none;
+
+        }
+        .anniu3{
+                position: absolute;
+                top: 44px;
+                left: 65px;
+                list-style: none;
+
+        }
+        .biaoqing{
+            list-style: none;
+            padding-left: 0;
+        }
+        #con,#bgImg,#bgImg img
+        {
+            width: 100%;
+            height: 545px;
+            padding: 0 0;
+        }
+        #con
+        {
+            position: relative;
+            margin: auto;
+            background: ;
+        }
+        #bgImg{
+            position: absolute;
+        }
+        #bgImg img{
+            opacity: 1;
+            transition: all 1s;
+            position: absolute;
+            left:0;
+            top:0;
+        }
+        #iconImg
+        {
+            position: absolute;
+            width: 70px;
+            right: 30px;
+            top:50px;
+            right: 5%;
+        }
+        #iconImg img
+        {
+            margin-top: 40px;
+            border: 2px solid #FFA50000;
+            transition: all 0.5s;
+        }
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+ 
+        body {
+            background: #000;
+            perspective: 340px;
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+        .stars {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 2px;
+            box-shadow: -447px 387px #c4c4c4, -401px 118px #fafafa, -109px 217px #d9d9d9, -680px -436px #e3e3e3, 514px 360px #cccccc, -708px 298px #e8e8e8, -696px -270px #ededed, 116px -128px #f7f7f7, 179px 35px white, -404px -90px whitesmoke, -331px -309px #c4c4c4, -363px -24px #d1d1d1, 277px 416px #fafafa, -145px -244px whitesmoke, 123px 62px #d4d4d4, -407px 418px #d9d9d9, 535px 237px #d9d9d9, -466px -78px #f7f7f7, 257px 287px #dedede, 327px -398px #e0e0e0, -602px -38px #c2c2c2, 128px 398px #e6e6e6, 274px -446px #d1d1d1, -602px -298px #c7c7c7, 526px -5px #c4c4c4, -90px -158px #fcfcfc, 5px 294px whitesmoke, -633px 229px #c4c4c4, -475px 427px #dedede, 586px -453px #f2f2f2, 180px -432px #c7c7c7, -637px -88px #cfcfcf, -453px 308px #d6d6d6, -111px 1px #d9d9d9, 573px -450px #ededed, 198px 300px #d6d6d6, -355px 166px #dedede, -715px 13px #e3e3e3, 262px -104px #d1d1d1, 147px 325px #dbdbdb, 1px 399px #dbdbdb, 286px -100px white, 43px -329px #e8e8e8, 617px 55px #d9d9d9, -168px -392px #cccccc, 84px 219px #c9c9c9, 507px -226px #d9d9d9, -327px -70px #e6e6e6, 386px -212px #c4c4c4, -717px 4px #cfcfcf, 502px -231px #e3e3e3, 302px 56px #ededed, 649px 341px #c7c7c7, 569px 350px #c9c9c9, 516px -31px #e6e6e6, 689px 447px #c2c2c2, 591px -206px #fafafa, 422px -137px #e6e6e6, -510px -324px #cccccc, -649px 287px #c2c2c2, -194px -48px #f7f7f7, -279px -329px #d1d1d1, -406px 478px #dbdbdb, -735px -87px #c9c9c9, 30px -197px #dedede, -564px 233px #e6e6e6, -486px -324px #ededed, -54px -7px #ededed, -441px -194px #e3e3e3, -133px -95px #e0e0e0, -722px -73px #d6d6d6, 595px 423px #ededed, 568px -39px #ededed, 370px 377px #d1d1d1, -419px -102px #fcfcfc, -450px 109px #c4c4c4, -57px -119px #d1d1d1, -582px 150px #e6e6e6, 206px -263px #cfcfcf, 582px -461px #c9c9c9, -268px -141px #d9d9d9, -148px 291px #c7c7c7, 254px -179px #c9c9c9, 725px 424px #f0f0f0, 391px -150px #ebebeb, 89px -299px #d4d4d4, 170px 1px #c9c9c9, 243px 209px #c7c7c7, 27px 460px #c9c9c9, -465px -380px #d4d4d4, 530px -360px whitesmoke, -626px 53px #e0e0e0, 706px 218px #d9d9d9, 40px -82px #cccccc, -5px -212px #e6e6e6, -742px 33px #ebebeb, -714px 478px #e0e0e0, -585px -125px #cccccc, -216px 348px #cfcfcf, 601px 332px #ededed, 344px -88px #c4c4c4, 659px -22px #d1d1d1, -411px 188px #d6d6d6, -423px -206px #fcfcfc, -359px -136px #cfcfcf, 612px 406px whitesmoke, 725px 96px whitesmoke, 363px -446px white, -204px 325px #c9c9c9, 740px 176px #fafafa, -489px -352px white, -638px 64px #dbdbdb, 537px -65px #dbdbdb, 151px -32px #ebebeb, 681px 212px #fcfcfc, 604px -149px #e6e6e6, -542px -398px #c4c4c4, -707px 66px whitesmoke, -381px 258px #cfcfcf, -30px 332px #d6d6d6, 512px -381px #c9c9c9, 195px 288px #cccccc, -278px 479px #c7c7c7, 27px -208px #d6d6d6, -288px 15px white, -680px 248px #dedede, 433px 31px #c9c9c9, 150px -206px #d4d4d4, -79px 247px white, -594px 115px #e0e0e0, 99px 292px #e0e0e0, 673px -269px #dedede, -257px -64px #d1d1d1, 449px 81px #f2f2f2, 18px -99px #d1d1d1, -694px 415px #f7f7f7, 240px 264px #e0e0e0, 450px -172px white, 383px 7px #e8e8e8, 338px -73px #c9c9c9, 291px -19px #ebebeb, 659px 137px #d1d1d1, 602px -6px #fcfcfc, 554px 249px #ebebeb, 625px 356px #d9d9d9, 579px -183px #d6d6d6, -20px 250px white, -401px 431px #c4c4c4, -645px -232px #cccccc, -265px -148px white, 553px 258px #d1d1d1, 166px -360px #ebebeb, 719px 51px #ededed, 612px -129px #ebebeb, -465px -104px #f2f2f2, -154px -121px #d9d9d9, -1px 330px #f2f2f2, -666px 248px #f7f7f7, -720px 264px #ededed, 148px -365px #e6e6e6, -388px -349px #c4c4c4, 128px -88px #e3e3e3, -683px -274px #fafafa, -341px 41px #c9c9c9, -59px -471px #f0f0f0, -3px -427px #c2c2c2;
+            animation: fly 3s linear infinite;
+            transform-style: preserve-3d;
+        } 
+        .stars:before,.stars:after{
+            content: "";
+            position: absolute;
+            width: inherit;
+            height: inherit;
+            box-shadow: inherit;
+        }
+        .stars:before {
+            transform: translateZ(-300px);
+            opacity: .6;
+        }
+        .stars:after {
+            transform: translateZ(-600px);
+            opacity: .4;
+        }
+ 
+        @keyframes fly {
+            from {
+                transform: translateZ(0px);
+                opacity: .6;
+            }
+            to {
+                transform: translateZ(300px);
+                opacity: 1;
+            }
+        }
+
+
+        /*滑出*/
+        .imgss{ width: 50px; height: 200px;   position: absolute; top: 50px; right: 5%;
+                margin-left: -95px; }
+
+        .imgAnimation{
+                animation-name: imgAnimation;
+                animation: imgAnimation 2s alternate;
+                -webkit-animation: imgAnimation 2s alternate ;
+                -moz-animation: imgAnimation 2s alternate infinite;
+        }
+        @-webkit-keyframes imgAnimation{
+                0%{ left: -200px;top:500px;}
+                100%{ top: 50px; right: 5%;}
+        }
+    </style>
+    <script>
+
+var Method=(function () {
+    return {
+        loadImage:function (arr,callback) {
+            var img=new Image();
+            img.arr=arr;
+            img.list=[];
+            img.num=0;
+            img.callback=callback;
+            img.addEventListener("load",this.loadHandler);
+            img.self=this;
+            img.src=arr[img.num];
+        },
+ 
+        loadHandler:function (e) {
+            this.list.push(this.cloneNode(false));
+            this.num++;
+            if(this.num>this.arr.length-1){
+                this.removeEventListener("load",this.self.loadHandler);
+                this.callback(this.list);
+                return;
+            }
+            this.src=this.arr[this.num];
+        },
+ 
+        $c:function (type,parent,style) {
+            var elem=document.createElement(type);
+            if(parent) parent.appendChild(elem);
+            for(var key in style){
+                elem.style[key]=style[key];
+            }
+            return elem;
+        }
+    }
+})();
+    </script>
+</head>
+<body>
+    <div id="con">
+        <div id="bgImg">
+            <img src="背景1.jpg">
+        </div>
+        <div id="iconImg" class="imgss imgAnimation">
+            <ul class="biaoqing">
+                <li><img width="50px" height="50px" src="原表情1.png" onMouseOver="this.src='表情1.png'" onMouseOut="this.src='原表情1.png'"></li>
+                <li><img width="50px" height="50px" src="原表情2.png" onMouseOver="this.src='表情2.png'" onMouseOut="this.src='原表情2.png'"></li>
+                <li><img width="50px" height="50px" src="原表情3.png" onMouseOver="this.src='表情3.png'" onMouseOut="this.src='原表情3.png'"></li>
+            </ul>
+           
+        </div>
+        <div>
+            <ul>
+
+            <li class="anniu1"><a href="视频.mp4"><img  height="80px"width="200px" src="未点击2.png" onMouseOver="this.src='点击2.png'" onMouseOut="this.src='未点击2.png'"></a></li>
+            <li class="anniu2"><a href=""><img  height="70px"width="200px" src="未点击1.png" onMouseOver="this.src='点击1.png'" onMouseOut="this.src='未点击1.png'"></a></li>
+            <li class="anniu3"><a href=""><img  height="80px"width="80px" src="7logo原.jpg" onMouseOver="this.src='7logo.png'" onMouseOut="this.src='7logo原.jpg'"></a></li>
+        </ul>
+        </div>
+        
+        
+    </div>
+
+
+    <div class="stars"></div>
+    <script>
+        var bgImg,iconImg,prevImg,imgList;//定义大图 
+        var N=0;//图像标记
+        var arr=["背景1.jpg","背景2.jpg","背景3.jpg","背景1.jpg"];//图片设置为数组形式 传参
+        init();
+        function init() {
+            Method.loadImage(arr,loadFinishHandler)//预加载
+        }
+        function loadFinishHandler(list) {//预加载赋值
+            imgList=list;
+            bgImg=document.getElementById("bgImg");
+            iconImg=document.getElementById("iconImg");
+            for(var i=0;i<iconImg.children.length;i++){
+                iconImg.children[i].num=i;
+                iconImg.children[i].addEventListener("click",clickHandler);
+            }
+            changeBorder(iconImg.firstElementChild);
+        }
+        setInterval(autoImg,6000);
+ 
+        function autoImg() {//自动轮播效果
+            N++;    //全局变量 用于控制当前轮播顺序
+            if (N>=4) N=0;
+            changeImg(N);//大图轮播
+            changeBorder(iconImg.children[N]);//小图外边框轮播  设置第几个 弄懂参数代表含义
+        }
+        function clickHandler(e) {
+            e =e || window.event;
+            changeBorder(this);
+            N=this.num;
+            changeImg(this.num);
+        }
+        
+        function changeBorder(elem) {
+            if(prevImg){
+                prevImg.style.border="2px solid #FFA50000";
+            }
+            prevImg=elem;
+            prevImg.style.border="2px solid #FFA50000";
+
+            //prevImg.style.box-shadow="5px 2px 6px #000";
+        }
+ 
+        function changeImg(index) {
+            if(bgImg.children.length>1){
+                bgImg.lastElementChild.remove();
+            }
+            bgImg.lastElementChild.style.opacity="0";
+            imgList[index].style.opacity="1";
+            bgImg.insertBefore(imgList[index],bgImg.firstElementChild);
+        }
+    </script>
+</body>
+</html>
